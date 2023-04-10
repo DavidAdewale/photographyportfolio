@@ -1,0 +1,100 @@
+*{
+   font-family: 'Raleway', sans-serif; 
+}
+
+
+.close-button{
+    color: 	rgba(0, 0, 0,1);
+    transition: all 250ms ease-out;
+}
+
+.close-button:hover{
+    color: 	rgba(223, 71, 89,1);
+}
+
+
+button{
+    border: 0;
+    background-color: rgba(0, 0, 0,0);
+}
+
+
+.navbar-toggler{
+    border: 0;
+    transition: all 250ms;
+}
+
+.navbar-toggler:hover{
+    color: rgba(223, 71, 89,1);
+}
+
+.navbar-toggler:active{
+    border: 0;
+    color: rgba(223, 71, 89,1);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.w-85{
+    width: 85%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.icons{
+    color: rgba(0, 0, 0,1);
+    transition: all 250ms;
+    transform: translateY(5px);
+}
+
+.icons:hover{
+    color: rgba(223, 71, 89,1);
+    transform: translateY(0px);
+    
+}
+
+.m-hover{
+    margin-right: 0;
+    transition: all 250ms;
+}
+
+.m-hover:hover{
+    margin-right: 8px;
+}
+
+.logo-fonts{
+    font-family: 'Cherry Swash', cursive;
+}
+
+.lt-2{
+    letter-spacing: 8px;
+}
+
+.card{
+    border: 0;
+    transition: all 300ms;
+}
+
+.card-img-overlay{
+    position: relative;
+    /* top: 100; */
+}
+
+#portfolio .card::before{
+    content: "";
+    background: rgba(0, 0, 0,0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#portfolio .card:hover::before{
+    opacity: 0;
+}
+

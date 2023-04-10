@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- Fancy Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Custom Styling Link  -->
+    <link rel="stylesheet" href="style.css">
+     <!-- Iconify Install  -->
+     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <!-- Animations  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Page Title  -->
+    <title>Photo Sharing Website Theme</title>
+</head>
+<body>
+<!-- NAVIGATION -->
+<nav class="navbar fixed-top navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+        <a href="" class="navbar-brand text-danger d-flex align-items-center fs-5">
+            <span class="iconify me-3" data-icon="material-symbols:camera"></span>
+            Linda Reinhard
+        </a>
+        <button 
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            data-bs-control="navbar"
+            aria-expanded="false"
+            >
+            <span class="iconify fs-4" data-icon="solar:menu-dots-square-broken"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<!-- HEADER  -->
+<header class="row row-cols-2 pb-4 flex-row align-items-center justify-content-center w-85 m-auto">
+    <div class="col-12 col-lg-6 container text-center text-sm-start pt-5" >
+    <div class="card-header bg-white text-secondary pt-5 lt-2">PHOTOGRAPHER</div>
+    <div class="card-body card-title display-1 logo-fonts pt-3 animate__animated animate__slideInLeft">Capturing Your Memories <span class="iconify" data-icon="wi:stars"></span></div>
+    <p class="card-text text-secondary mt-4">
+        Welcome to my portfolio, where I showcase my passion for photography and my ability to turn your precious moments into timeless memories. With years of experience, I bring a creative eye and an attention to detail to every shoot, ensuring that each shot is perfectly composed and edited. Browse through my portfolio to see examples of my work, and feel free to reach out to me to discuss how I can help capture your special moments.
+    </p>
+    <div class="d-flex flex-sm-row flex-column mt-2 mb-4 align-items-center">
+       
+       <!-- Contact Form button  -->
+        <button 
+            class="btn btn-danger me-3"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#email"
+            >
+            <i class="bi bi-envelope-open me-2"></i> Email me Here
+        </button>
+          
+        <!-- Social Icons - Mine  -->
+        <div class="fs-4 mt-2 mt-sm-0 mb-3">
+            <a href="">
+                <span class="iconify ms-3 icons" data-icon="teenyicons:pinterest-outline"></span>
+            </a>
+            <a href="">
+                <span class="iconify ms-3 icons" data-icon="basil:twitter-outline"></span>
+            </a>
+            
+            <a href="" class="">
+                <i class="iconify ms-3 icons" data-icon="iconoir:facebook"></i>
+            </a>
+            
+        </div>
+      
+    </div>
+    </div>
+
+    <div class="col-12 col-sm-6 text-center container">
+        <div class="card border-0"> 
+            <i class="i bi bi-instagram text-danger display-1"></i>
+            <h6 class="text-muted mt-4">Check out my</h6>
+            <h4 class="text-uppercase fs-5">
+                <a href="" class="text-decoration-none m-hover" target="_blank">Instagram</a>
+                <i class="bi bi-arrow-right"></i>
+            </h4>
+        </div>
+    </div>
+<!-- HEADER > FORM  -->
+<div class="modal fade" id="email" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Book a shoot</div>
+                <span class="iconify close-button fs-5" data-icon="mdi:window-close" data-bs-dismiss="modal"></span>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row g-3">
+                    <div class="col-md-6">
+                        <label  for="" class="form-label">First name</label>
+                        <input type="text" class="form-control" placeholder="John">
+                    </div>
+                    <div class="col-md-6">
+                        <label  for="" class="form-label">Last name</label>
+                        <input type="text" class="form-control" placeholder="Doe">
+                    </div>
+                    <div class="col-12">
+                        <label for="" class="form-label">Address</label>
+                        <input type="text" class="form-control" placeholder="123 Main str.">
+                    </div>
+                    <div class="col-12">
+                        <label for="" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" placeholder="Shoot location, Apartment, Studio or floor">
+                     </div>
+                     <div class="col-md-6">
+                        <label for="" class="form-label">City</label>
+                        <input type="text" class="form-control" placeholder="Your city">
+                     </div>
+                     <div class="col-md-4">
+                        <label for="" class="form-label">State</label>
+                        <select type="text" class="form-select">
+                        <option value="" selected>Choose...</option>
+                        <option value="">State-1</option>
+                        <option value="">State-2</option>
+                        <option value="">State-3</option>
+                        </select>
+                     </div>
+                     <div class="col-md-2">
+                        <label for="" class="form-label">ZIP</label>
+                        <input type="text" class="form-control" placeholder="">
+                     </div>
+
+                     <div class="col-12">
+                        <a href="" class="text-link" role="button" data-bs-toggle="modal" data-bs-target="#ToS">TERMS & CONDITIONS</a>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input">
+                            <label for="" class="form-check-label">I agree</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-danger w-100" type="submit">Send</button>
+                    </div>
+                </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="ToS" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <div class="modal-title">Terms of service</div>
+                    <span class="iconify close-button fs-5" data-icon="mdi:window-close" data-bs-dismiss="modal"></span>
+                </div>
+                
+                <div class="modal-body">
+                    <p>
+                        Welcome to [Photographer's Website Name] (the "Website"). By accessing or using the Website, you agree to be bound by the following terms and conditions (the "Terms of Service"). Please read them carefully before using the Website.
+                        <br>
+                        <br>                        
+                        User Content: The Website allows users to upload and share photographs and other content. By posting any content on the Website, you represent and warrant that you have the right to use and distribute such content, and that the content does not infringe the rights of any third party. You agree to indemnify and hold [Photographer's Website Name] and its affiliates harmless from any and all claims arising out of your use of the Website.
+                        <br>
+                        <br>
+                        Intellectual Property: All content on the Website, including but not limited to photographs, text, graphics, logos, and images, is the property of [Photographer's Name] and is protected by copyright and other intellectual property laws. You may not use or reproduce any content from the Website without the express written consent of [Photographer's Name].
+                        <br>
+                        <br>
+                        Links to Third-Party Sites: The Website may contain links to third-party websites or resources. [Photographer's Website Name] is not responsible for the availability of such external sites or resources, and does not endorse and is not responsible or liable for any content, advertising, products, or other materials on or available from such sites or resources. You acknowledge and agree that [Photographer's Website Name] shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods, or services available on or through any such site or resource.
+                        <br>
+                        <br>
+                        Disclaimer of Warranties: The Website is provided "as is" and without warranties of any kind, either express or implied. [Photographer's Website Name] disclaims all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. [Photographer's Website Name] does not warrant that the Website will be uninterrupted or error-free, that defects will be corrected, or that the Website or the server(s) that makes it available are free of viruses or other harmful components.
+                        <br>
+                        <br>
+                        Limitation of Liability: In no event shall [Photographer's Website Name] or its affiliates be liable for any direct, indirect, punitive, incidental, special, or consequential damages arising out of or in any way connected with the use of the Website or with the delay or inability to use the Website, or for any information, software, products, and services obtained through the Website, or otherwise arising out of the use of the Website, whether based on contract, tort, strict liability, or otherwise, even if [Photographer's Website Name] or its affiliates have been advised of the possibility of such damages.
+                        <br>
+                        <br>
+                        Governing Law: These Terms of Service shall be governed by and construed in accordance with the laws of [State or Country], without regard to its conflicts of law provisions.
+                        <br>
+                        <br>
+                        Changes to the Terms of Service: [Photographer's Website Name] reserves the right to modify or replace these Terms of Service at any time, in its sole discretion. Your continued use of the Website after any such changes constitutes your acceptance of the new Terms of Service.
+                        <br>
+                        <br>
+                        If you have any questions or comments about these Terms of Service, please contact us at [Photographer's Contact Information].
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" >Close</button>
+                </div>
+            </div>
+        </div>
+
+</div>
+</header>
+
+<!-- HEADER > FORM > TERMS OF SERVICE  -->
+<main>
+    <!-- MAIN SECTION  -->
+    <section id="experience" class="bg-light pb-5">
+    <!-- MAIN > EXPERIENCE  -->
+    <div class="row flex-row align-items-center justify-content-around pt-5 w-85 m-auto">
+        <div class="col-lg-6 mt-5 text-center text-sm-start  mb-5">
+            <div class="card-header bg-light text-secondary text-uppercase lt-2">Experience</div>
+                <div class="card-body">
+                    <h5 class="card-title display-4 fw-bold">I have been capturing memories for the past 10 years!</h5>
+                    <p class="card-text text-secondary mt-4">
+                        As a photographer with over a decade of experience, I bring a unique perspective to each and every project. My portfolio showcases my versatility and my ability to adapt to any situation. Whether I'm capturing the beauty of a landscape or the emotion of a wedding, I always strive to create images that are both captivating and timeless. With a passion for storytelling and an eye for detail, I work closely with my clients to ensure that their vision is brought to life. When you work with me, you're not just getting a photographer - you're getting a partner who is dedicated to making your project a success.
+                    </p>
+                </div>
+            </div>
+            <!-- MAIN > EXPERIENCE > TITLE  -->
+        <div class="col-lg-6">
+            
+            <div class="row gy-5 row-cols-1 row-cols-md-2 text-center text-sm-start">
+            <!-- MAIN > EXPERIENCE > PHOTOS > PORTRAIT  -->
+            <div class="col">
+                <div class=" card shadow">
+                    <div class="card-body">
+                        <span class="iconify text-danger fs-4 mb-2" data-icon="solar:camera-linear"></span>
+                        <h5 class="card-title fw-bold">Portrait Photos</h5>
+                        <p class="card-text">
+                            As a photographer, capturing the essence of my subjects in portrait photography is my passion and my greatest joy.
+                        </p>
+                        <a href="" class="btn btn-danger" role="button" data-bs-toggle="modal" data-bs-target="#portrait">View Photos</a>
+                        <div class="modal fade" id="portrait" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog model-dialog-center">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title">Portrait Photos</div>
+                                        <span class="iconify close-button fs-5" data-icon="mdi:window-close" data-bs-dismiss="modal"></span>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <!-- Portrait Carousel  -->
+                                        <div class="carousel slide" id="portraitCap" data-bs-ride="carousel" data-bs-interval="5000">
+                                            
+                                            <div class="carousel-indicators">
+
+                                                <button class="active" 
+                                                    type="button" 
+                                                    data-bs-target="#portraitCap"    data-bs-slide-to="0"
+                                                    aria-current="2"
+                                                    aria-label="Slide 1">
+                                                </button>
+
+                                                <button class="" 
+                                                    type="button" 
+                                                    data-bs-target="#portraitCap"    data-bs-slide-to="1"
+                                                    aria-label="Slide 2">
+                                                </button>
+
+                                                <button class="" 
+                                                    type="button" 
+                                                    data-bs-target="#portraitCap"    data-bs-slide-to="2"
+                                                    aria-label="Slide 3">
+                                                </button>
+
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?portrait/" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>First Slide</h5>
+                                                        <p>This is the first slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?portrait/red" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Second Slide</h5>
+                                                        <p>This is the second slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?portrait/black" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Third Slide</h5>
+                                                        <p>This is the third slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        
+                                            <button 
+                                                class="carousel-control-prev"
+                                                data-bs-target="#portraitCap"
+                                                data-bs-slide="prev"
+                                                >
+                                            <span class="carousel-control-prev-icon"></span>
+                                            </button>
+
+                                            <button 
+                                                class="carousel-control-next"
+                                                data-bs-target="#portraitCap"
+                                                data-bs-slide="next"
+                                                >
+                                            <span class="carousel-control-next-icon"></span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAIN > EXPERIENCE > PHOTOS > TRAVEL  -->
+            <div class="col">
+                <div class=" card shadow">
+                    <div class="card-body">
+                        <span class="iconify text-danger fs-4 mb-2" data-icon="streamline:travel-map-earth-1-planet-earth-globe-world"></span>
+                        <h5 class="card-title fw-bold">Travel Blog</h5>
+                        <p class="card-text">
+                            Discover breathtaking travel destinations through stunning photography in my portfolio's travel blog photos section.
+                        </p>
+                        <a href="" class="btn btn-danger" role="button" data-bs-toggle="modal" data-bs-target="#travel">View Photos</a>
+                        <div class="modal fade" id="travel" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog model-dialog-center">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title">Travel Blog</div>
+                                        <span class="iconify close-button fs-5" data-icon="mdi:window-close" data-bs-dismiss="modal"></span>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <!-- Portrait Carousel  -->
+                                        <div class="carousel slide" id="travelCap" data-bs-ride="carousel" data-bs-interval="5000">
+                                            
+                                            <div class="carousel-indicators">
+
+                                                <button class="active" 
+                                                    type="button" 
+                                                    data-bs-target="#travelCap"    data-bs-slide-to="0"
+                                                    aria-current="2"
+                                                    aria-label="Slide 1">
+                                                </button>
+
+                                                <button class="" 
+                                                    type="button" 
+                                                    data-bs-target="#travelCap"    data-bs-slide-to="1"
+                                                    aria-label="Slide 2">
+                                                </button>
+
+                                                <button class="" 
+                                                    type="button" 
+                                                    data-bs-target="#travelCap"    data-bs-slide-to="2"
+                                                    aria-label="Slide 3">
+                                                </button>
+
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?travel/" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>First Slide</h5>
+                                                        <p>This is the first slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?travel/red" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Second Slide</h5>
+                                                        <p>This is the second slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?travel/black" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Third Slide</h5>
+                                                        <p>This is the third slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        
+                                            <button 
+                                                class="carousel-control-prev"
+                                                data-bs-target="#travelCap"
+                                                data-bs-slide="prev"
+                                                >
+                                            <span class="carousel-control-prev-icon"></span>
+                                            </button>
+
+                                            <button 
+                                                class="carousel-control-next"
+                                                data-bs-target="#travelCap"
+                                                data-bs-slide="next"
+                                                >
+                                            <span class="carousel-control-next-icon"></span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- MAIN > EXPERIENCE > PHOTOS > WEDDING -->
+            <div class="col">
+                <div class=" card shadow">
+                    <div class="card-body">
+                        <span class="iconify text-danger fs-4 mb-2" data-icon="icon-park-outline:oval-love-two"></span>
+                        <h5 class="card-title fw-bold">Wedding Photos</h5>
+                        <p class="card-text">
+                            Experience the love and joy captured in every moment of our stunning wedding photography collection
+                        </p>
+                        <a href="" class="btn btn-danger" role="button" data-bs-toggle="modal" data-bs-target="#wedding">View Photos</a>
+                        <div class="modal fade" id="wedding" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog model-dialog-center">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title">Wedding Photos</div>
+                                        <span class="iconify close-button fs-5" data-icon="mdi:window-close" data-bs-dismiss="modal"></span>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <!-- Portrait Carousel  -->
+                                        <div class="carousel slide" id="weddingCap" data-bs-ride="carousel" data-bs-interval="5000">
+                                            
+                                            <div class="carousel-indicators">
+
+                                                <button class="active" 
+                                                    type="button" 
+                                                    data-bs-target="#weddingCap"    data-bs-slide-to="0"
+                                                    aria-current="2"
+                                                    aria-label="Slide 1">
+                                                </button>
+
+                                                <button class="" 
+                                                    type="button" 
+                                                    data-bs-target="#weddingCap"    data-bs-slide-to="1"
+                                                    aria-label="Slide 2">
+                                                </button>
+
+                                                <button class="" 
+                                                    type="button" 
+                                                    data-bs-target="#weddingCap"    data-bs-slide-to="2"
+                                                    aria-label="Slide 3">
+                                                </button>
+
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?wedding/" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>First Slide</h5>
+                                                        <p>This is the first slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?wedding/red" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Second Slide</h5>
+                                                        <p>This is the second slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?wedding/black" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Third Slide</h5>
+                                                        <p>This is the third slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        
+                                            <button 
+                                                class="carousel-control-prev"
+                                                data-bs-target="#weddingCap"
+                                                data-bs-slide="prev"
+                                                >
+                                            <span class="carousel-control-prev-icon"></span>
+                                            </button>
+
+                                            <button 
+                                                class="carousel-control-next"
+                                                data-bs-target="#weddingCap"
+                                                data-bs-slide="next"
+                                                >
+                                            <span class="carousel-control-next-icon"></span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- MAIN > EXPERIENCE > PHOTOS > NATURE -->
+            <div class="col">
+                <div class=" card shadow">
+                    <div class="card-body">
+                        <span class="iconify text-danger fs-4 mb-2" data-icon="streamline:nature-ecology-flower-plant-tree-flower-petals-bloom"></span>
+                        <h5 class="card-title fw-bold">Nature Photos</h5>
+                        <p class="card-text">
+                            Immerse yourself in the beauty of the natural world through stunning nature photography.
+                        </p>
+                        <a href="" class="btn btn-danger" role="button" data-bs-toggle="modal" data-bs-target="#nature">View Photos</a>
+                        <div class="modal fade" id="nature" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog model-dialog-center">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title">Nature Photos</div>
+                                        <span class="iconify close-button fs-5" data-icon="mdi:window-close" data-bs-dismiss="modal"></span>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <!-- Portrait Carousel  -->
+                                        <div class="carousel slide" id="natureCap" data-bs-ride="carousel" data-bs-interval="5000">
+                                            
+                                            <div class="carousel-indicators">
+
+                                                <button class="active" 
+                                                    type="button" 
+                                                    data-bs-target="#natureCap"    data-bs-slide-to="0"
+                                                    aria-current="2"
+                                                    aria-label="Slide 1">
+                                                </button>
+
+                                                <button class="" 
+                                                    type="button" 
+                                                    data-bs-target="#natureCap"    data-bs-slide-to="1"
+                                                    aria-label="Slide 2">
+                                                </button>
+
+                                                <button class="" 
+                                                    type="button" 
+                                                    data-bs-target="#natureCap"    data-bs-slide-to="2"
+                                                    aria-label="Slide 3">
+                                                </button>
+
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?nature/" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>First Slide</h5>
+                                                        <p>This is the first slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?nature/red" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Second Slide</h5>
+                                                        <p>This is the second slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/weekly?nature/black" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Third Slide</h5>
+                                                        <p>This is the third slide caption</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        
+                                            <button 
+                                                class="carousel-control-prev"
+                                                data-bs-target="#natureCap"
+                                                data-bs-slide="prev"
+                                                >
+                                            <span class="carousel-control-prev-icon"></span>
+                                            </button>
+
+                                            <button 
+                                                class="carousel-control-next"
+                                                data-bs-target="#natureCap"
+                                                data-bs-slide="next"
+                                                >
+                                            <span class="carousel-control-next-icon"></span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+<!-- MAIN > PORTFOLIO  -->
+    <section id="portfolio" class="row w-85 m-auto">
+        <div class="col-12 mt-5 text-center text-sm-start w-75 m-auto ms-md-0">
+            <div class="card-header bg-white text-secondary lt-2 text-uppercase">Portfolio</div>
+            <hr class="text-secondary">
+            <div class="card-body">
+                <h6 class="card-title display-4 fw-bold">
+                    Take a look at my work
+                </h6>
+                <p class="card-text text-secondary mt-4">
+                    In this gallery, you'll find a selection of my favorite photos, from weddings and portraits to landscapes and nature. Each image represents a special moment in time, captured through my lens with a unique perspective and creative vision. I hope you enjoy browsing through my work as much as I've enjoyed creating it.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-12 my-5">
+            <div class="row gy-4 rol-cols-1 row-cols-sm-2 row-cols-md-3 align-items-center text-center text-md-start">
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="https://images.pexels.com/photos/13356439/pexels-photo-13356439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-img-overlay">
+                            <div class="card-title display-6">Card Title</div>
+                            <p class="card-text">This is a photo caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="https://images.pexels.com/photos/13695602/pexels-photo-13695602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-img-overlay">
+                            <div class="card-title display-6">Card Title</div>
+                            <p class="card-text">This is a photo caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="https://images.pexels.com/photos/6957667/pexels-photo-6957667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-img-overlay">
+                            <div class="card-title display-6">Card Title</div>
+                            <p class="card-text">This is a photo caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="https://images.pexels.com/photos/15706243/pexels-photo-15706243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-img-overlay">
+                            <div class="card-title display-6">Card Title</div>
+                            <p class="card-text">This is a photo caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="https://images.pexels.com/photos/9132551/pexels-photo-9132551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-img-overlay">
+                            <div class="card-title display-6">Card Title</div>
+                            <p class="card-text">This is a photo caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="https://images.pexels.com/photos/15032293/pexels-photo-15032293.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-img-overlay">
+                            <div class="card-title display-6">Card Title</div>
+                            <p class="card-text">This is a photo caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="https://images.pexels.com/photos/15886497/pexels-photo-15886497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-img-overlay">
+                            <div class="card-title display-6">Card Title</div>
+                            <p class="card-text">This is a photo caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="https://images.pexels.com/photos/16014501/pexels-photo-16014501.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="">
+                        <div class="card-img-overlay">
+                            <div class="card-title display-6">Card Title</div>
+                            <p class="card-text">This is a photo caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="https://images.pexels.com/photos/15983779/pexels-photo-15983779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-img-overlay">
+                            <div class="card-title display-6">Card Title</div>
+                            <p class="card-text">This is a photo caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+
+            
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER  -->
+<footer class="text-center bg-light text-dark p-5">
+    <p class="fw-light"> &copy; 2023 Big Dave | All rights Reserved</p>
+    <div class="flex-row fs-4">
+        <span class="iconify ms-3 icons" data-icon="teenyicons:pinterest-outline"></span>
+        <span class="iconify ms-3 icons" data-icon="basil:twitter-outline"></span>
+        <span class="iconify ms-3 icons" data-icon="iconoir:facebook"></span>
+        <span class="iconify ms-3 icons" data-icon="radix-icons:instagram-logo"></span>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS CDN  -->
+    <!-- Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <!-- JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+     <!-- Script for Tooltips  -->
+     <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <!-- Popovers  -->
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+   
+</body>
+</html>
